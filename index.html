@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    <title>TO DO</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <div  class="main-content">
+        <div  class="daily-habits-container">
+            <p>Daily progress</p>
+            <div id="dailyHabits" style="height: calc(100% - 120px);">
+                <div id="1" class="habit">
+                    <label>first habit</label>
+                    <input  name="first habit" type="checkbox" checked>
+                    <img class="delete-habit" src="./cancel.png" alt="X" srcset="">
+                </div>
+            </div>
+            <form class="habit-adder">
+                <input type="text" name="habit" id="addHabitInput" placeholder="habit name...">
+                <input id="addHabitBtn" type="submit" value="ADD">
+            </form>
+        </div>
+        <div class="monthly-habits-container">
+            <p>Monthly progress </p>
+            <div id="monthlyHabits">
+                <div id="1001" class="chart-wrapper">
+                    <p>first habit</p>
+                    <canvas class="myChart" id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
