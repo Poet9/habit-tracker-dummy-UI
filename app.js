@@ -141,8 +141,8 @@ domElements.daily.addEventListener('click', (e)=>{
     else if(e.target.className === "update-habit"){
         const habitId = e.target.parentNode.id;
         const image = document.createElement('img');
-        image.src = "./check.png"
-        image.alt = "9armouda"
+        image.src = "./check.png";
+        image.alt = "Y";
         image.classList.add('checked-img');
         e.target.parentNode.replaceChild(image,e.target);
 
